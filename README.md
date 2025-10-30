@@ -17,10 +17,10 @@ This approach simulates how **AI can assist in DevOps debugging**, making failur
 ---
 
 ## Repository Structure
-app.py → Sample Python script (introduces a race condition)
-test_app.py → Test that fails due to threading issue
-analyse_logs.py → Sends logs to Claude API for analysis
-azure-pipelines.yml → Azure DevOps pipeline configuration
+app.py → Sample Python script (introduces a race condition) <br/>
+test_app.py → Test that fails due to threading issue <br/>
+analyse_logs.py → Sends logs to Claude API for analysis <br/>
+azure-pipelines.yml → Azure DevOps pipeline configuration <br/>
 
 ---
 
