@@ -1,0 +1,13 @@
+2025-10-30T13:58:02.1661902Z ##[section]Starting: Run tests (capture errors)
+2025-10-30T13:58:02.1667234Z ==============================================================================
+2025-10-30T13:58:02.1667329Z Task         : Command line
+2025-10-30T13:58:02.1667375Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-10-30T13:58:02.1667457Z Version      : 2.250.1
+2025-10-30T13:58:02.1667503Z Author       : Microsoft Corporation
+2025-10-30T13:58:02.1667554Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-10-30T13:58:02.1667629Z ==============================================================================
+2025-10-30T13:58:02.2981185Z Generating script.
+2025-10-30T13:58:02.2991107Z ========================== Starting Command Output ===========================
+2025-10-30T13:58:02.3025856Z [command]/usr/bin/bash --noprofile --norc /home/vsts/work/_temp/4b9d1e12-d240-4f0e-a3d5-7e40f9ff38a3.sh
+2025-10-30T13:58:03.4889047Z 
+2025-10-30T13:58:03.4953887Z ##[section]Finishing: Run tests (capture errors)

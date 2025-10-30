@@ -1,0 +1,53 @@
+2025-10-30T13:55:18.4127520Z ##[section]Starting: Initialize job
+2025-10-30T13:55:18.4131225Z Agent name: 'Hosted Agent'
+2025-10-30T13:55:18.4131887Z Agent machine name: 'runnervmkjshe'
+2025-10-30T13:55:18.4132201Z Current agent version: '4.261.0'
+2025-10-30T13:55:18.4160763Z ##[group]Runner Image Provisioner
+2025-10-30T13:55:18.4161154Z Hosted Compute Agent
+2025-10-30T13:55:18.4161419Z Version: 20250912.392
+2025-10-30T13:55:18.4161724Z Commit: d921fda672a98b64f4f82364647e2f10b2267d0b
+2025-10-30T13:55:18.4162062Z Build Date: 2025-09-12T15:23:14Z
+2025-10-30T13:55:18.4162326Z ##[endgroup]
+2025-10-30T13:55:18.4162584Z ##[group]Operating System
+2025-10-30T13:55:18.4162831Z Ubuntu
+2025-10-30T13:55:18.4163037Z 24.04.3
+2025-10-30T13:55:18.4163250Z LTS
+2025-10-30T13:55:18.4163465Z ##[endgroup]
+2025-10-30T13:55:18.4163710Z ##[group]Runner Image
+2025-10-30T13:55:18.4163972Z Image: ubuntu-24.04
+2025-10-30T13:55:18.4164226Z Version: 20250929.60.1
+2025-10-30T13:55:18.4164629Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250929.60/images/ubuntu/Ubuntu2404-Readme.md
+2025-10-30T13:55:18.4165312Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250929.60
+2025-10-30T13:55:18.4165655Z ##[endgroup]
+2025-10-30T13:55:18.4169192Z Current image version: '20250929.60.1'
+2025-10-30T13:55:18.5781874Z Agent running as: 'vsts'
+2025-10-30T13:55:18.5831147Z Prepare build directory.
+2025-10-30T13:55:18.6091424Z Set build variables.
+2025-10-30T13:55:18.6111087Z Download all required tasks.
+2025-10-30T13:55:18.6196337Z Downloading task: UsePythonVersion (0.263.0)
+2025-10-30T13:55:19.2074982Z Downloading task: CmdLine (2.250.1)
+2025-10-30T13:55:19.4181505Z Checking job knob settings.
+2025-10-30T13:55:19.4183793Z    Knob: DockerActionRetries = true Source: $(VSTSAGENT_DOCKER_ACTION_RETRIES) 
+2025-10-30T13:55:19.4184345Z    Knob: AgentToolsDirectory = /opt/hostedtoolcache Source: ${AGENT_TOOLSDIRECTORY} 
+2025-10-30T13:55:19.4186067Z    Knob: UseGitLongPaths = true Source: $(USE_GIT_LONG_PATHS) 
+2025-10-30T13:55:19.4188116Z    Knob: EnableIssueSourceValidation = true Source: $(ENABLE_ISSUE_SOURCE_VALIDATION) 
+2025-10-30T13:55:19.4188821Z    Knob: AgentEnablePipelineArtifactLargeChunkSize = true Source: $(AGENT_ENABLE_PIPELINEARTIFACT_LARGE_CHUNK_SIZE) 
+2025-10-30T13:55:19.4191014Z    Knob: ContinueAfterCancelProcessTreeKillAttempt = true Source: $(VSTSAGENT_CONTINUE_AFTER_CANCEL_PROCESSTREEKILL_ATTEMPT) 
+2025-10-30T13:55:19.4191607Z    Knob: ProcessHandlerSecureArguments = false Source: $(AZP_75787_ENABLE_NEW_LOGIC) 
+2025-10-30T13:55:19.4192008Z    Knob: ProcessHandlerSecureArguments = false Source: $(AZP_75787_ENABLE_NEW_LOGIC_LOG) 
+2025-10-30T13:55:19.4192397Z    Knob: ProcessHandlerTelemetry = true Source: $(AZP_75787_ENABLE_COLLECT) 
+2025-10-30T13:55:19.4192897Z    Knob: ProcessHandlerEnableNewLogic = true Source: $(AZP_75787_ENABLE_NEW_PH_LOGIC) 
+2025-10-30T13:55:19.4193508Z    Knob: EnableResourceMonitorDebugOutput = true Source: $(AZP_ENABLE_RESOURCE_MONITOR_DEBUG_OUTPUT) 
+2025-10-30T13:55:19.4193947Z    Knob: EnableResourceUtilizationWarnings = true Source: $(AZP_ENABLE_RESOURCE_UTILIZATION_WARNINGS) 
+2025-10-30T13:55:19.4194556Z    Knob: IgnoreVSTSTaskLib = true Source: $(AZP_AGENT_IGNORE_VSTSTASKLIB) 
+2025-10-30T13:55:19.4194975Z    Knob: FailJobWhenAgentDies = true Source: $(FAIL_JOB_WHEN_AGENT_DIES) 
+2025-10-30T13:55:19.4195466Z    Knob: CheckForTaskDeprecation = true Source: $(AZP_AGENT_CHECK_FOR_TASK_DEPRECATION) 
+2025-10-30T13:55:19.4196021Z    Knob: CheckIfTaskNodeRunnerIsDeprecated246 = True Source: $(DistributedTask.Agent.CheckIfTaskNodeRunnerIsDeprecated246) 
+2025-10-30T13:55:19.4196803Z    Knob: LogTaskNameInUserAgent = true Source: $(AZP_AGENT_LOG_TASKNAME_IN_USERAGENT) 
+2025-10-30T13:55:19.4197222Z    Knob: UseFetchFilterInCheckoutTask = true Source: $(AGENT_USE_FETCH_FILTER_IN_CHECKOUT_TASK) 
+2025-10-30T13:55:19.4197701Z    Knob: Rosetta2Warning = true Source: $(ROSETTA2_WARNING) 
+2025-10-30T13:55:19.4199111Z    Knob: UseSparseCheckoutInCheckoutTask = true Source: $(AGENT_USE_SPARSE_CHECKOUT_IN_CHECKOUT_TASK) 
+2025-10-30T13:55:19.4200037Z    Knob: AgentCDNConnectivityFailWarning = False Source: $(DistributedTask.Agent.AgentCDNConnectivityFailWarning) 
+2025-10-30T13:55:19.4200480Z Finished checking job knob settings.
+2025-10-30T13:55:19.4520577Z Start tracking orphan processes.
+2025-10-30T13:55:19.4666655Z ##[section]Finishing: Initialize job

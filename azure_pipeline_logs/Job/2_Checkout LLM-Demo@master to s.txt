@@ -1,0 +1,68 @@
+2025-10-30T13:55:19.4853004Z ##[section]Starting: Checkout LLM-Demo@master to s
+2025-10-30T13:55:19.4939747Z ==============================================================================
+2025-10-30T13:55:19.4940818Z Task         : Get sources
+2025-10-30T13:55:19.4941052Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2025-10-30T13:55:19.4941327Z Version      : 1.0.0
+2025-10-30T13:55:19.4941518Z Author       : Microsoft
+2025-10-30T13:55:19.4941751Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2025-10-30T13:55:19.4941873Z ==============================================================================
+2025-10-30T13:55:19.8374632Z Syncing repository: LLM-Demo (Git)
+2025-10-30T13:55:20.0735638Z ##[command]git version
+2025-10-30T13:55:20.1021906Z git version 2.51.0
+2025-10-30T13:55:20.1054124Z ##[command]git lfs version
+2025-10-30T13:55:20.1835691Z git-lfs/3.7.0 (GitHub; linux amd64; go 1.24.4)
+2025-10-30T13:55:20.1901119Z ##[command]git init "/home/vsts/work/1/s"
+2025-10-30T13:55:20.1974744Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-10-30T13:55:20.1976341Z hint: is subject to change. To configure the initial branch name to use in all
+2025-10-30T13:55:20.1977523Z hint: of your new repositories, which will suppress this warning, call:
+2025-10-30T13:55:20.1978485Z hint:
+2025-10-30T13:55:20.1979360Z hint: 	git config --global init.defaultBranch <name>
+2025-10-30T13:55:20.1980211Z hint:
+2025-10-30T13:55:20.1981309Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-10-30T13:55:20.1982385Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-10-30T13:55:20.1983328Z hint:
+2025-10-30T13:55:20.1984135Z hint: 	git branch -m <name>
+2025-10-30T13:55:20.1984877Z hint:
+2025-10-30T13:55:20.1985801Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-10-30T13:55:20.1986877Z Initialized empty Git repository in /home/vsts/work/1/s/.git/
+2025-10-30T13:55:20.2007543Z ##[command]git remote add origin https://prasanthramaswamy01@dev.azure.com/prasanthramaswamy01/Web-Project/_git/LLM-Demo
+2025-10-30T13:55:20.2054016Z ##[command]git sparse-checkout disable
+2025-10-30T13:55:20.2109628Z ##[command]git config gc.auto 0
+2025-10-30T13:55:20.2158456Z ##[command]git config core.longpaths true
+2025-10-30T13:55:20.2211293Z ##[command]git config --get-all http.https://prasanthramaswamy01@dev.azure.com/prasanthramaswamy01/Web-Project/_git/LLM-Demo.extraheader
+2025-10-30T13:55:20.2343522Z ##[command]git config --get-all http.extraheader
+2025-10-30T13:55:20.2385728Z ##[command]git config --get-regexp .*extraheader
+2025-10-30T13:55:20.2421831Z ##[command]git config --get-all http.proxy
+2025-10-30T13:55:20.2540866Z ##[command]git config http.version HTTP/1.1
+2025-10-30T13:55:20.2564210Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1  +116090c40601712e6de55d276df515bff914c11b:refs/remotes/origin/116090c40601712e6de55d276df515bff914c11b
+2025-10-30T13:55:20.4274211Z remote: Azure Repos        
+2025-10-30T13:55:20.4484018Z remote: 
+2025-10-30T13:55:20.4492277Z remote: Found 8 objects to send. (23 ms)        
+2025-10-30T13:55:20.4598103Z From https://dev.azure.com/prasanthramaswamy01/Web-Project/_git/LLM-Demo
+2025-10-30T13:55:20.4604132Z  * [new ref]         116090c40601712e6de55d276df515bff914c11b -> origin/116090c40601712e6de55d276df515bff914c11b
+2025-10-30T13:55:20.5293311Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1  +116090c40601712e6de55d276df515bff914c11b
+2025-10-30T13:55:20.6825354Z remote: Azure Repos        
+2025-10-30T13:55:20.6833186Z remote: 
+2025-10-30T13:55:20.6833784Z remote: Found 0 objects to send. (0 ms)        
+2025-10-30T13:55:20.6894573Z From https://dev.azure.com/prasanthramaswamy01/Web-Project/_git/LLM-Demo
+2025-10-30T13:55:20.6895618Z  * branch            116090c40601712e6de55d276df515bff914c11b -> FETCH_HEAD
+2025-10-30T13:55:20.7471659Z ##[command]git checkout --progress --force refs/remotes/origin/116090c40601712e6de55d276df515bff914c11b
+2025-10-30T13:55:20.7486576Z Note: switching to 'refs/remotes/origin/116090c40601712e6de55d276df515bff914c11b'.
+2025-10-30T13:55:20.7487008Z 
+2025-10-30T13:55:20.7487628Z You are in 'detached HEAD' state. You can look around, make experimental
+2025-10-30T13:55:20.7488411Z changes and commit them, and you can discard any commits you make in this
+2025-10-30T13:55:20.7489178Z state without impacting any branches by switching back to a branch.
+2025-10-30T13:55:20.7489515Z 
+2025-10-30T13:55:20.7490128Z If you want to create a new branch to retain commits you create, you may
+2025-10-30T13:55:20.7491231Z do so (now or later) by using -c with the switch command. Example:
+2025-10-30T13:55:20.7491580Z 
+2025-10-30T13:55:20.7492114Z   git switch -c <new-branch-name>
+2025-10-30T13:55:20.7492363Z 
+2025-10-30T13:55:20.7492894Z Or undo this operation with:
+2025-10-30T13:55:20.7493145Z 
+2025-10-30T13:55:20.7493633Z   git switch -
+2025-10-30T13:55:20.7493842Z 
+2025-10-30T13:55:20.7494485Z Turn off this advice by setting config variable advice.detachedHead to false
+2025-10-30T13:55:20.7494857Z 
+2025-10-30T13:55:20.7495410Z HEAD is now at 116090c Updated test_app.py
+2025-10-30T13:55:20.7557719Z ##[section]Finishing: Checkout LLM-Demo@master to s

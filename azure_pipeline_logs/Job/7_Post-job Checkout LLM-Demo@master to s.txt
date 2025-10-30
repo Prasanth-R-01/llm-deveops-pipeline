@@ -1,0 +1,10 @@
+2025-10-30T13:58:14.8206778Z ##[section]Starting: Checkout LLM-Demo@master to s
+2025-10-30T13:58:14.8213092Z ==============================================================================
+2025-10-30T13:58:14.8213219Z Task         : Get sources
+2025-10-30T13:58:14.8213268Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2025-10-30T13:58:14.8213364Z Version      : 1.0.0
+2025-10-30T13:58:14.8213412Z Author       : Microsoft
+2025-10-30T13:58:14.8213455Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2025-10-30T13:58:14.8213529Z ==============================================================================
+2025-10-30T13:58:15.0438496Z Cleaning any cached credential from repository: LLM-Demo (Git)
+2025-10-30T13:58:15.0585645Z ##[section]Finishing: Checkout LLM-Demo@master to s
