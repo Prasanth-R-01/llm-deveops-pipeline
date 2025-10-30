@@ -1,0 +1,33 @@
+trigger:
+  branches:
+    include:
+    - main
+stages:
+- stage: __default
+  jobs:
+  - job: Job
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '3.x'
+    - task: CmdLine@2
+      displayName: 'Install dependencies'
+      inputs:
+        script: "pip install pytest requests torch transformers optimum accelerate anthropic \n"
+    - task: CmdLine@2
+      displayName: 'Run tests (capture errors)'
+      inputs:
+        script: |
+          pytest -v test_app.py > test_output.log 2>&1
+          exit 0  # Prevent pipeline from stopping even if pytest fails
+    - task: CmdLine@2
+      displayName: 'Analyze build logs with Claude'
+      env:
+        CLAUDE_API_KEY: $(CLAUDE_API_KEY)
+      inputs:
+        script: |
+          echo "Sending logs to Claude for analysis..."
+          python analyse_logs.py
+
